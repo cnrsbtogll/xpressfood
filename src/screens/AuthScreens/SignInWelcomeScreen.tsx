@@ -4,7 +4,8 @@ import {colors, parameters} from '../../global/styles';
 import Swiper from 'react-native-swiper';
 import {Button} from '@rneui/base';
 
-const SignInWelcomeScreen = () => {
+
+const SignInWelcomeScreen = ({navigation } : {navigation:any}) => {
   return (
     <View style={{flex: 1}}>
       <View
@@ -13,7 +14,6 @@ const SignInWelcomeScreen = () => {
           justifyContent: 'flex-start',
           alignItems: 'center',
           paddingTop: 20,
-          backgroundColor: 'blue',
         }}>
         <Text style={{fontSize: 26, color: colors.buttons, fontWeight: 'bold'}}>
           DISCOVER RESTAURANTS
@@ -23,7 +23,7 @@ const SignInWelcomeScreen = () => {
         </Text>
       </View>
       <View
-        style={{flex: 4, justifyContent: 'center', backgroundColor: 'green'}}>
+        style={{flex: 4, justifyContent: 'center'}}>
         <Swiper autoplay>
           <View style={styles.slide1}>
             <Image
@@ -49,12 +49,13 @@ const SignInWelcomeScreen = () => {
           </View>
         </Swiper>
       </View>
-      <View style={{flex: 4, justifyContent:'flex-end', marginBottom:20, backgroundColor: 'yellow'}}>
+      <View style={{flex: 4, justifyContent:'flex-end', marginBottom:20}}>
         <View style={{marginHorizontal: 20, marginTop: 30}}>
           <Button
             title={'SIGN IN'}
             buttonStyle={parameters.styledButton as any}
             titleStyle={parameters.buttonTitle as any}
+            onPress={()=>{navigation.navigate('SignInScreen')}}
           />
         </View>
         <View>

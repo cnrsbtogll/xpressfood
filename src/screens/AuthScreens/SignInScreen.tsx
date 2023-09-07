@@ -1,18 +1,18 @@
 import React, {useRef, useState} from 'react';
-import {View, Text, StyleSheet, Dimensions, TextInput} from 'react-native';
+import {View, Text, StyleSheet, TextInput} from 'react-native';
 import {colors, parameters} from '../../global/styles';
 import {Icon, Button, SocialIcon} from '@rneui/themed';
 import Header from '../../components/Header';
 import * as Animatable from 'react-native-animatable';
 
-export default function SignInScreen() {
+export default function SignInScreen({navigation}: {navigation: any}) {
   const [textInput2Focused, setTextInput2Focused] = useState(false);
   const textInput1 = useRef(1);
   const textInput2 = useRef(2);
 
   return (
     <View>
-      <Header title={'MY ACCOUNT'} type={'ionicon'} />
+      <Header title={'MY ACCOUNT'} type={'ionicon'} navigation={navigation} />
 
       <View style={{marginLeft: 20, marginTop: 10}}>
         <Text style={styles.title}>Sign-In</Text>
@@ -113,17 +113,17 @@ export default function SignInScreen() {
           style={{
             ...styles.text1,
             marginLeft: 20,
-            marginTop:15
+            marginTop: 15,
           }}>
           {' '}
           New on XpressFood ?
         </Text>
       </View>
       <View>
-        <Button 
-        title={"Create an account"}
-        buttonStyle={styles.createButton}
-        titleStyle={styles.createButtonTitle}
+        <Button
+          title={'Create an account'}
+          buttonStyle={styles.createButton}
+          titleStyle={styles.createButtonTitle}
         />
       </View>
     </View>
@@ -165,24 +165,24 @@ const styles = StyleSheet.create({
     marginHorizontal: 20,
     height: 50,
   },
-  createButton:{
-    backgroundColor:"white",
-    alignSelf:'flex-end',
-    alignContent:'center',
-    justifyContent:'center',
-    borderRadius:12,
-    borderWidth:1,
-    borderColor:colors.buttons,
-    height:40,
-    paddingHorizontal:20,
-    marginRight:20,
-    marginVertical:15
+  createButton: {
+    backgroundColor: 'white',
+    alignSelf: 'flex-end',
+    alignContent: 'center',
+    justifyContent: 'center',
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: colors.buttons,
+    height: 40,
+    paddingHorizontal: 20,
+    marginRight: 20,
+    marginVertical: 15,
   },
-  createButtonTitle:{
-    color:colors.buttons,
-    fontSize:16,
-    fontWeight:'bold',
-    alignItems:'center',
-    justifyContent:'center'
-  }
+  createButtonTitle: {
+    color: colors.buttons,
+    fontSize: 16,
+    fontWeight: 'bold',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 });
