@@ -18,7 +18,7 @@ import {filterData} from '../global/data';
 import filter from 'lodash/filter';
 
 export default function SearchComponent() {
-  const navigation: any = useNavigation();
+  const navigation = useNavigation();
   const [data, setData] = useState([...filterData]);
   const [modalVisible, setModalVisible] = useState(false);
   const [textInputFossued, setTextInputFossued] = useState(true);
@@ -109,7 +109,7 @@ export default function SearchComponent() {
               <TouchableOpacity
                 onPress={() => {
                   Keyboard.dismiss;
-                  navigation.navigate('SearchResultScreen', {item: item.name});
+                  navigation.navigate('SeachResultScreen', {item: item.name});
                   setModalVisible(false);
                   setTextInputFossued(true);
                 }}>

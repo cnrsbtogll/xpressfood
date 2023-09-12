@@ -48,7 +48,7 @@ export default function SearchScreen({navigation}) {
             ListHeaderComponent={
               <Text style={styles.listHeader}>Top Categories</Text>
             }
-            ListFooterComponent={<Footer />}
+            ListFooterComponent={<Footer navigation={navigation}/>}
           />
         </View>
       </View>
@@ -56,7 +56,7 @@ export default function SearchScreen({navigation}) {
   );
 }
 
-const Footer = () => {
+const Footer = ({navigation}) => {
   return (
     <View style={{marginTop: 20, marginBottom: 30}}>
       <View style={{}}>
