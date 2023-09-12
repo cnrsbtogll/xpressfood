@@ -25,17 +25,17 @@ export const restaurantsData = [
       {
         name: 'Hand cut chips',
         price: 29.3,
-        image: 'https://bukasapics.s3.us-east-2.amazonaws.com/plate5.png',
+        image: 'https://images.deliveryhero.io/image/fd-tr/LH/rm81-hero.jpg',
       },
       {
         name: 'Big Mac',
         price: 50.8,
-        image: 'https://bukasapics.s3.us-east-2.amazonaws.com/plate4.png',
+        image: 'https://images.deliveryhero.io/image/fd-tr/LH/rm81-hero.jpg',
       },
       {
         name: 'Chicken Burger',
         price: 70,
-        image: 'https://bukasapics.s3.us-east-2.amazonaws.com/plate3.png',
+        image: 'https://images.deliveryhero.io/image/fd-tr/LH/rm81-hero.jpg',
       },
     ],
     id: 0,
@@ -179,22 +179,72 @@ export const filterData2 = [
   },
   {
     name: 'Sea food',
-    image: 'https://www.licious.in/blog/wp-content/uploads/2022/02/shutterstock_1773695441-min.jpg',
+    image:
+      'https://www.licious.in/blog/wp-content/uploads/2022/02/shutterstock_1773695441-min.jpg',
     id: '6',
   },
   {
     name: 'Chinese Food',
-    image: 'https://media.cnn.com/api/v1/images/stellar/prod/220921081550-05-chinese-foods-mapo-tofu.jpg?c=original',
+    image:
+      'https://media.cnn.com/api/v1/images/stellar/prod/220921081550-05-chinese-foods-mapo-tofu.jpg?c=original',
     id: '7',
   },
   {
     name: 'Mexican pie',
-    image: 'https://hips.hearstapps.com/delish/assets/17/45/1510262160-delish-hot-chocolate-pie-1.jpg',
+    image:
+      'https://hips.hearstapps.com/delish/assets/17/45/1510262160-delish-hot-chocolate-pie-1.jpg',
     id: '8',
   },
   {
     name: 'Ocean dish',
-    image: 'https://www.womenstuff.co.za/wp-content/uploads/2021/12/OB-Sea-Bream_header.jpeg',
+    image:
+      'https://www.womenstuff.co.za/wp-content/uploads/2021/12/OB-Sea-Bream_header.jpeg',
     id: '9',
+  },
+];
+
+export const productData = [
+  {
+    name: 'Hand cut chips',
+    price: 29.3,
+    image: 'https://bukasapics.s3.us-east-2.amazonaws.com/plate5.png',
+    details: 'Two 100% fresh beef burger patties that are hot,deliciously',
+    id: 0,
+  },
+  {
+    name: 'Big Mac',
+    price: 50.8,
+    image: 'https://bukasapics.s3.us-east-2.amazonaws.com/plate4.png',
+    details: 'McFeast features two 100% fresh beef burger patties that are hot',
+    id: 1,
+  },
+  {
+    name: 'Chicken Burger',
+    price: 70,
+    image: 'https://bukasapics.s3.us-east-2.amazonaws.com/plate3.png',
+    details: '',
+    id: 2,
+  },
+
+  {
+    name: 'Hand cut chips',
+    price: 29.3,
+    image: 'https://bukasapics.s3.us-east-2.amazonaws.com/plate4.png',
+    details: 'Two 100% fresh beef burger patties that are hot,deliciously',
+    id: 3,
+  },
+  {
+    name: 'Big Mac',
+    price: 70.2,
+    image: 'https://bukasapics.s3.us-east-2.amazonaws.com/plate1.png',
+    details: 'McFeast features two 100% fresh beef burger patties that are hot',
+    id: 4,
+  },
+  {
+    name: 'Chicken Burger',
+    price: 70,
+    image: 'https://bukasapics.s3.us-east-2.amazonaws.com/chicken.png',
+    details: '',
+    id: 5,
   },
 ];
