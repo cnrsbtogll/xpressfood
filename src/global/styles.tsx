@@ -10,6 +10,7 @@ export const colors = {
   statusBar: '#ff8c52',
   headerText: 'white',
   lightgreen: '#66DF48',
+  black: '#000',
 };
 
 export const parameters = {
@@ -27,12 +28,36 @@ export const parameters = {
     width: '%100',
   },
   buttonTitle: {
-    color: "white",
-    fontSize:20,
-    fontWeight:"bold",
-    alignItems:"center",
-    justfyContent:"center",
-    
+    color: 'white',
+    fontSize: 20,
+    fontWeight: 'bold',
+    alignItems: 'center',
+    justfyContent: 'center',
+  },
+};
+export const fonts = {
+  ios: {
+    regular: 'System',
+    light: 'System',
+    lightItalic: 'System',
+    bold: 'System',
+    boldItalic: 'System',
+    black: 'System',
+    blackItalic: 'System',
+  },
+  android: {
+    regular: 'Roboto',
+    italic: 'Roboto-Italic',
+    thin: 'Roboto-Thin',
+    thinItalic: 'Roboto-ThinItalic',
+    light: 'Roboto-Light',
+    lightItalic: 'Roboto-LightItalic',
+    medium: 'Roboto-Medium',
+    mediumItalic: 'Roboto-MediumItalic',
+    bold: 'Roboto-Bold',
+    boldItalic: 'Roboto-BoldItalic',
+    condensed: 'RobotoCondensed-Regular',
+    condensedItalic: 'RobotoCondensed-Italic',
   },
 };
 
